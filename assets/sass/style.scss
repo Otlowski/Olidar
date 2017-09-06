@@ -1,0 +1,85 @@
+$mainDark      : rgb(61, 65, 69);
+$mainLightDust : rgb(206, 198, 179);
+$mainDust      : rgb(205, 174, 102);
+$mainBlueDark  : rgb(100, 116, 136);
+$mainBlue      : rgb(119, 133, 152);
+$mainBrown     : rgb(144, 112, 72);
+$mainGray      : rgb(124, 129, 120);
+$mainGrayTwo   : rgb(129, 126, 130);
+
+
+.navbar{
+  background-color: $mainDark;
+}
+.navbar-brand{
+  font-weight: bold;
+}
+.nav-item{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  a.nav-link{
+    color:$mainLightDust;
+  }
+  a:hover{
+    transform: scale(1.2);
+    color: $mainDust;
+  }
+}
+
+#section-one{
+  position: relative;
+  height: 100vh;
+  padding: 0;
+  background-image: url('../../img/sea.jpeg');
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999;
+
+  .jumbotron{
+    padding-top: 250px;
+    background-color: transparent;
+    color:#fff;
+    .btn--check-in{
+        border: 2px solid #fff;
+        color: #fff;
+        padding:24px 44px;
+        font-size:27px;
+        font-weight: bold;
+        background-color: #343a40;
+        cursor: pointer;
+    }
+    .btn--check-in:hover{
+      transform: scale(1.2);
+      color: #cdae66;
+    }
+    .top-text{
+      font-size: 40px;
+      font-style: italic;
+      line-height: 40px;
+      margin-bottom: 25px;
+      font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+    .main-text{
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 75px;
+      margin-bottom: 50px;
+      font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+@media (max-width: 768px){
+  #section-one{
+    .main-text {
+      font-size: 50px;
+    }
+  }
+
+}
